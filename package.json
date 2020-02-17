@@ -14,11 +14,12 @@
     "gatsby-plugin-sharp": "^2.4.3",
     "gatsby-source-filesystem": "^2.1.46",
     "gatsby-transformer-sharp": "^2.3.13",
+    "less": "^3.11.1",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.1",
-    "semantic-ui-less": "^2.4.1",
+    "semantic-ui-less": "https://github.com/grinich/Semantic-UI-LESS.git",
     "semantic-ui-react": "^0.88.2"
   },
   "devDependencies": {
