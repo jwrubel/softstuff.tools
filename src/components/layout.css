@@ -5,6 +5,12 @@ html {
 }
 body {
   margin: 0;
+  overflow-x: hidden;
+  min-width: 320px;
+  background:#f7fbff;
+  font-size: 14px;
+  line-height: 1.4285em;
+  color: rgba(0,0,0,.87);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -49,6 +55,7 @@ template {
 .main, .site-footer, .site-header{
   margin-left: auto;
   margin-right: auto;
+  padding: 10px;
 }
 
 .site-footer {

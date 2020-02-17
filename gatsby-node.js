@@ -21,7 +21,7 @@ exports.onCreateWebpackConfig = ({ actions }) => {
 
   categories.forEach(category => {
     createPage({
-      path: `/categories/${category.slug}/`,
+      path: `/topics/${category.slug}/`,
       component: categoryTemplate,
       context: {
         category

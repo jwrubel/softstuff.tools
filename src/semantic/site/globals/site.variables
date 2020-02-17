@@ -1,3 +1,228 @@
 /*******************************
      User Global Variables
 *******************************/
+
+/*-------------------
+        Page
+--------------------*/
+
+@pageBackground      : #f7fbff;
+@textColor           : rgba(0, 0, 0, 0.87);
+
+/*-------------------
+       Fonts
+--------------------*/
+@font-face {
+ font-family: 'Libel Suit Regular';
+ src: url('../../../fonts/libel-suit-rg-webfont.woff2') format('woff2'),
+ url('../../../fonts/libel-suit-rg-webfont.woff') format('woff');
+ font-weight: normal;
+ font-style: normal;
+}
+
+@font-face {
+ font-family: 'Libel Suit Bold';
+ src: url('../../../fonts/libel-suit-bd-webfont.woff2') format('woff2'),
+ url('../../../fonts/libel-suit-bd-webfont.woff') format('woff');
+ font-weight: normal;
+ font-style: normal;
+}
+
+@headerFontName    : 'Libel Suit Regular';
+@fontName          : 'Open Sans';
+@fontSmoothing     : antialiased;
+
+@h1Font            : @headerFontName, Arial, sans-serif;
+@headerFont        : @fontName, Arial, sans-serif;
+@pageFont          : @fontName, Arial, sans-serif;
+
+@googleFontName    : @fontName;
+@importGoogleFonts : true;
+@googleFontSizes   : '400,700';
+@googleSubset      : 'latin';
+
+@googleProtocol    : 'https://';
+@googleFontRequest : '@{googleFontName}:@{googleFontSizes}&subset=@{googleSubset}';
+
+/*-------------------
+    Brand Colors
+--------------------*/
+
+@brandPrimary        : rgba(0,135,162,100);
+@brandSecondary      : rgba(67,212,227,100);
+
+@brandLightSecondary : rgba(141,229,238,100);
+@brandDarkPrimary    : rgba(0,101,121,100);
+
+@brandRed            : rgba(240,76,95,100);
+@brandLightRed       : rgba(245,129,141,100);
+
+@brandOffBlue        : rgba(115,185,254,100);
+@brandLightOffBlue   : rgba(182,218,254,100);
+
+/*-------------------
+    Brand Gradients
+--------------------*/
+
+@primaryGradient:
+  linear-gradient(
+    to right,
+    #3EA9EF,
+    #47D5E4 42%,
+    #B1FFFF
+  );
+
+  @lightGradient:
+    linear-gradient(
+      to right,
+      #C5F4F8,
+      #EFFFFF
+    );
+
+/*--------------
+  Page Heading
+---------------*/
+
+
+// increase the h1 size
+@h1 : unit((40 / 14), rem);
+
+
+/*-------------------
+      Site Colors
+--------------------*/
+
+/*---  Colors  ---*/
+@primaryColor        : @brandPrimary;
+@secondaryColor      : @brandSecondary;
+
+@lightPrimaryColor   : @brandOffBlue;
+@lightSecondaryColor : @brandLightSecondary;
+@darkPrimaryColor    : @brandDarkPrimary;
+@red                 : @brandRed;
+@orange              : #F2711C;
+@yellow              : #FBBD08;
+@olive               : #B5CC18;
+@green               : #21BA45;
+@teal                : @secondaryColor;
+@blue                : @brandOffBlue;
+@violet              : #6435C9;
+@purple              : #A333C8;
+@pink                : #E03997;
+@brown               : #A5673F;
+@grey                : #767676;
+@black               : #1B1C1D;
+
+/*---  Light Colors  ---*/
+@lightRed         : @brandLightRed;
+@lightOrange      : #FF851B;
+@lightYellow      : #FFE21F;
+@lightOlive       : #D9E778;
+@lightGreen       : #2ECC40;
+@lightTeal        : @lightSecondaryColor;
+@lightBlue        : @brandLightOffBlue;
+@lightViolet      : #A291FB;
+@lightPurple      : #DC73FF;
+@lightPink        : #FF8EDF;
+@lightBrown       : #D67C1C;
+@lightGrey        : #DCDDDE;
+@lightBlack       : #545454;
+
+/*---   Neutrals  ---*/
+@fullBlack        : #000000;
+@offWhite         : #F9FAFB;
+@darkWhite        : #F3F4F5;
+@midWhite         : #DCDDDE;
+@white            : #FFFFFF;
+
+/*--- Colored Backgrounds ---*/
+@redBackground    : #FFE8E6;
+@orangeBackground : #FFEDDE;
+@yellowBackground : #FFF8DB;
+@oliveBackground  : #FBFDEF;
+@greenBackground  : #E5F9E7;
+@tealBackground   : #E1F7F7;
+@blueBackground   : #DFF0FF;
+@violetBackground : #EAE7FF;
+@purpleBackground : #F6E7FF;
+@pinkBackground   : #FFE3FB;
+@brownBackground  : #F1E2D3;
+
+/*--- Colored Headers ---*/
+@redHeaderColor    : darken(@redTextColor, 5);
+@oliveHeaderColor  : darken(@oliveTextColor, 5);
+@greenHeaderColor  : darken(@greenTextColor, 5);
+@yellowHeaderColor : darken(@yellowTextColor, 5);
+@blueHeaderColor   : darken(@blueTextColor, 5);
+@tealHeaderColor   : darken(@tealTextColor, 5);
+@pinkHeaderColor   : darken(@pinkTextColor, 5);
+@violetHeaderColor : darken(@violetTextColor, 5);
+@purpleHeaderColor : darken(@purpleTextColor, 5);
+@orangeHeaderColor : darken(@orangeTextColor, 5);
+@brownHeaderColor  : darken(@brownTextColor, 5);
+
+/*--- Colored Text ---*/
+@redTextColor    : @red;
+@orangeTextColor : @orange;
+@yellowTextColor : #B58105; // Yellow text is difficult to read
+@oliveTextColor  : #8ABC1E; // Olive is difficult to read
+@greenTextColor  : #1EBC30; // Green is difficult to read
+@tealTextColor   : #10A3A3; // Teal text is difficult to read
+@blueTextColor   : @blue;
+@violetTextColor : @violet;
+@purpleTextColor : @purple;
+@pinkTextColor   : @pink;
+@brownTextColor  : @brown;
+@whiteTextColor  : @white;
+
+/*--- Colored Border ---*/
+@redBorderColor    : @redTextColor;
+@orangeBorderColor : @orangeTextColor;
+@yellowBorderColor : @yellowTextColor;
+@oliveBorderColor  : @oliveTextColor;
+@greenBorderColor  : @greenTextColor;
+@tealBorderColor   : @tealTextColor;
+@blueBorderColor   : @blueTextColor;
+@violetBorderColor : @violetTextColor;
+@purpleBorderColor : @purpleTextColor;
+@pinkBorderColor   : @pinkTextColor;
+@brownBorderColor  : @brownTextColor;
+
+/*-------------------
+       Accents
+--------------------*/
+
+/* Differentiating Neutrals */
+@subtleGradient: linear-gradient(transparent, @transparentBlack);
+
+/*-------------------
+    Emotive Colors
+--------------------*/
+
+/* Positive */
+@positiveColor           : @green;
+@positiveBackgroundColor : #FCFFF5;
+@positiveBorderColor     : #A3C293;
+@positiveHeaderColor     : #1A531B;
+@positiveTextColor       : #2C662D;
+
+/* Negative */
+@negativeColor           : @red;
+@negativeBackgroundColor : #FFF6F6;
+@negativeBorderColor     : #E0B4B4;
+@negativeHeaderColor     : #912D2B;
+@negativeTextColor       : #9F3A38;
+
+/* Info */
+@infoColor              : #31CCEC;
+@infoBackgroundColor    : #F8FFFF;
+@infoBorderColor        : #A9D5DE;
+@infoHeaderColor        : #0E566C;
+@infoTextColor          : #276F86;
+
+/* Warning */
+@warningColor           : #F2C037;
+@warningBorderColor     : #C9BA9B;
+@warningBackgroundColor : #FFFAF3;
+@warningHeaderColor     : #794B02;
+@warningTextColor       : #573A08;

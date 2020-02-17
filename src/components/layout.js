@@ -7,31 +7,17 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
 
 import { Link } from 'gatsby'
 import { Grid, Image, List, Segment } from 'semantic-ui-react'
 import logotypeWhite from '../images/logotype-white.png'
+import "semantic-ui-less/semantic.less"
 import "./layout.css"
-import Helmet from "react-helmet"
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
   return (
     <>
-      <Helmet>
-        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css" />
-      </Helmet>
-      <main>{children}</main>
+      <div class="main">{children}</div>
       <div className="site-footer">
         <Grid centered textAlign='center'>
           <Grid.Column computer={8} tablet={12} mobile={16}>

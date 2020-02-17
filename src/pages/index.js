@@ -9,7 +9,7 @@ import SEO from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO />
     <Grid id='welcome-box' verticalAlign='middle' columns={2} padded>
       <Grid.Row only='mobile'>
         <Grid.Column width={16}>
@@ -40,7 +40,7 @@ const IndexPage = () => (
         {categories.map((data) => {
           return(
             <List.Item key={data._id}>
-              <Link to={`/categories/${data.slug}`}><List.Header as='a'>{data.name}</List.Header></Link>
+              <Link to={`/topics/${data.slug}`}><List.Header as='a'>{data.name}</List.Header></Link>
               <List.Description>
                 {data.description}
               </List.Description>
